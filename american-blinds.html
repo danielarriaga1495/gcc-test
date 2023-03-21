@@ -15,18 +15,18 @@
     <script>
         lpTag.events.bind("LP_OFFERS", "OFFER_CLICK", processThis);
 
-        // function processThis() {
-        //     console.log("Customer started conversation");
-        //     alert("Customer started conversation");
-        // }
-
-        function processThis(data, eventInfo) {
-            if (window.console && window.JSON) {
-                console.log("Customer started conversation");
-                alert("Customer started conversation");
-                console.log(JSON.stringify(data) + " triggered by: " + JSON.stringify(eventInfo));
-            }
+        function processThis() {
+            console.log("Customer started conversation");
+            alert("Customer started conversation");
         }
+
+        // function processThis(data, eventInfo) {
+        //     if (window.console && window.JSON) {
+        //         console.log("Customer started conversation");
+        //         alert("Customer started conversation");
+        //         console.log(JSON.stringify(data) + " triggered by: " + JSON.stringify(eventInfo));
+        //     }
+        // }
     </script>
     <!-- END LivePerson Monitor. -->
 
